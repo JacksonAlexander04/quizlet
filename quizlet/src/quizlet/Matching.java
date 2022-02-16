@@ -3,22 +3,22 @@ package quizlet;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class matching
+public class Matching
 	{
 		static int index;
 		public static void match()
 			{
 				System.out.println("Match the term with it's definition");
-				int[] indexArray = new int[quizletRunner.numOfCards];
+				int[] indexArray = new int[QuizletRunner.numOfCards];
 
-				for (int i = 0; i < quizletRunner.numOfCards; i++)
+				for (int i = 0; i < QuizletRunner.numOfCards; i++)
 					{
 						
-						index = (int) (Math.random() * quizletRunner.Flashcards.size());
+						index = (int) (Math.random() * QuizletRunner.Flashcards.size());
 						
 						if (Arrays.asList(indexArray).contains(index))
 							{
-								index = (int) (Math.random() * quizletRunner.Flashcards.size());
+								index = (int) (Math.random() * QuizletRunner.Flashcards.size());
 								System.out.println(index);
 							} 
 						

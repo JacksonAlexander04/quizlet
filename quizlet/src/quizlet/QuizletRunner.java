@@ -3,7 +3,7 @@ package quizlet;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class quizletRunner
+public class QuizletRunner
 	{
 
 		static ArrayList<quizlet> Flashcards = new ArrayList<quizlet>();
@@ -50,14 +50,14 @@ public class quizletRunner
 				menuAnswer = scanner.nextInt();
 				
 				if(menuAnswer == 1) {
-					flashcards.studyFlashcards();
+					
 					
 				}
 				if(menuAnswer == 2) {
-					quiz.studyFlashcards();
+					Quiz.studyFlashcards();
 				}
 				if(menuAnswer == 3) {
-					matching.match();
+					Matching.match();
 					
 				}
 				
