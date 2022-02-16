@@ -6,6 +6,7 @@ public class quiz {
 	static int numOfMulChoice;
 	static int numOfTF;
 	static int numOfWriting;
+	static String userAnswer;
 	public static void studyFlashcards() {
 		System.out.println("Out of the " + quizletRunner.numOfCards + " flashcards, how many cards do you want to be multiple choce questions?");
 		System.out.println();
@@ -23,8 +24,12 @@ public class quiz {
 		
 		if(numOfMulChoice > 0) {
 			for(int i = 0; i <= numOfMulChoice; i++) {
-				System.out.println(quizletRunner.Flashcards.get(i).getTerm());
-				System.out.println("a." );
+				System.out.println(quizletRunner.Flashcards.get(i).getDefinition());
+				System.out.println("a." + quizletRunner.Flashcards.get(i).getTerm());
+				System.out.println("b." + quizletRunner.Flashcards.get(i + 1).getTerm());
+				System.out.println("c." + quizletRunner.Flashcards.get(i + 2).getTerm());
+				System.out.println("d." + quizletRunner.Flashcards.get(i + 3).getTerm());
+				userAnswer = scanner.nextLine();
 			}
 		}
 		if(numOfTF > 0) {
